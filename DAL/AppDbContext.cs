@@ -9,6 +9,6 @@ namespace CurrencyWatcher.DAL
             Database.EnsureCreated();
         }
 
-        public DbSet<Valut> Valuts { get; set; }
+        public DbSet<Currency> Currencies { get; set; }
     }
 }

@@ -1,12 +1,14 @@
-﻿namespace CurrencyWatcher.DAL
+﻿using System.Diagnostics.CodeAnalysis;
+
+namespace CurrencyWatcher.DAL
 {
-    public class Valut
+    public class Currency
     {
         public int Id { get; set; }
 
         public DateTime Dadd { get; set; }
 
-        public string Currency { get; set; }
+        public string? Name { get; set; }
 
         public int Amount { get; set; }
 

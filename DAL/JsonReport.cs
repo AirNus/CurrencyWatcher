@@ -8,9 +8,9 @@ namespace CurrencyWatcher.DAL
         public int Index { get; set; }
         public int Amount { get; set; }
         public string Currency { get; set; }
-
+        
         [JsonIgnore]
-        public List<double> Values { get; set; }
+        public Dictionary<DateTime, double> Values { get; set; }
 
         public double Min { get; set; }
         public double Max { get; set; }

@@ -9,8 +9,8 @@ using Microsoft.EntityFrameworkCore;
 var builder = WebApplication.CreateBuilder(args);
 
 // Add services to the container.
-builder.Services.AddScoped<IBaseRepository<Valut>, ValutRepository>();
-builder.Services.AddScoped<IValutService, ValutService>();
+builder.Services.AddScoped<IBaseRepository<Currency>, CurrencyRepository>();
+builder.Services.AddScoped<ICurrencyService, CurrencyService>();
 
 builder.Services.AddControllers();
 // Learn more about configuring Swagger/OpenAPI at https://aka.ms/aspnetcore/swashbuckle
